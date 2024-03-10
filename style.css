@@ -27,6 +27,9 @@ section {
     align-items: center;
     z-index: 1000; 
     }
+    .dropdown-content{
+        padding:1rem 1rem;
+    }
 
 .myname {
     font-size: 24px;
@@ -66,6 +69,67 @@ transition: opacity 0.3s ease;
 nav a:hover::after {
 opacity: 1;
     }
+
+/* Reset CSS */
+body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 2px;
+    text-decoration: none;
+    color: #333;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    margin-left: 90px;
+    margin-top: 15px;
+}
+
+/* Font Awesome Icons */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+
 
 .intro {
     padding: 40px;
@@ -316,4 +380,3 @@ opacity: 1;
 .social-media a:hover::after {
     opacity: 1;
     }
-
